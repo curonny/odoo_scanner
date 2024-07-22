@@ -8,10 +8,10 @@ import 'package:odoo_scanner/models/product.dart';
 
 class HttpController extends GetxController {
   RxBool loading = false.obs;
-  RxString url = 'https://bur16-pre.binhex.cloud'.obs;
-  RxString db = 'bur16'.obs;
-  RxString user = 'r.montano@binhex.cloud'.obs;
-  RxString password = 'r.montano@binhex.cloud'.obs;
+  RxString url = ''.obs;
+  RxString db = ''.obs;
+  RxString user = ''.obs;
+  RxString password = ''.obs;
   Rx<Product?> product = Rx<Product?>(null);
   RxBool existProduct = false.obs;
   late OdooClient client;
